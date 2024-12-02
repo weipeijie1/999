@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function replaceString(original, target, replacement) {
+  const regex = new RegExp(target, 'g');
+  return original.replace(regex, replacement);
+}
+console.log(replaceString("hello world", "world", "there")); 
+console.log(replaceString("abc abc abc", "abc", "123"));    
+
+</script>
+</html>

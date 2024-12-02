@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function findSecondLargest(arr) {
+  const uniqueArr = [...new Set(arr)].sort((a, b) => b - a);
+  return uniqueArr.length > 1 ? uniqueArr[1] : null;
+}
+console.log(findSecondLargest([3, 5, 1, 2, 4])); 
+console.log(findSecondLargest([1, 2, 2, 2]));   
+</script>
+</html>
